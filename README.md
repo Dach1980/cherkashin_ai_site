@@ -30,10 +30,10 @@ Then visit http://localhost:8000.
 
 ## Publish with GitHub Pages
 
-1. Open the repository's **Settings → Pages**.
-2. Under **Build and deployment**, choose **Deploy from a branch**.
-3. Select the default branch and the `/(root)` folder, then save.
-4. Wait for GitHub Pages to publish the site; the public URL will be shown in the Pages settings.
+This is a static site and can be published without a build step. Open **Settings → Pages**, choose **Deploy from a branch**, select `main` and `/(root)`, and save. GitHub will show the public URL when the deployment is ready.
+
+**Repository visibility matters:** this repository is currently private. On GitHub Free, Pages is available for public repositories; publishing from a private repository requires a plan that supports private Pages. To use free hosting, change the repository visibility to public only after reviewing the source and confirming you are comfortable making it public. Do not publish credentials, private information, or confidential project material in this repository.
+
 
 ## Content notes before public launch
 
