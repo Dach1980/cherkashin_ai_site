@@ -22,3 +22,33 @@
 .video-callout .button{margin-left:auto;white-space:nowrap}
 @media(max-width:900px){.lesson-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.curriculum-intro{gap:18px;flex-wrap:wrap}.curriculum-intro>a{margin-left:0}}
 @media(max-width:600px){.lesson-grid{grid-template-columns:1fr}.lesson-card{min-height:220px}.curriculum-intro{padding:17px}.video-callout{align-items:flex-start;flex-wrap:wrap}.video-callout .button{margin-left:0}.video-callout>div:nth-child(2){flex:1;min-width:180px}}
+
+/* Responsive YouTube playlist catalog */
+.video-courses-section{padding-top:35px}
+.playlist-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.playlist-card{min-width:0;overflow:hidden;border:1px solid var(--line);border-radius:17px;background:linear-gradient(145deg,#121d30,#0c1422);display:grid;grid-template-columns:.82fr 1.18fr;transition:transform .22s,border-color .22s}
+.playlist-card:hover{transform:translateY(-4px);border-color:#8ce6e15c}
+.playlist-art{min-height:300px;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;background:radial-gradient(ellipse at 50% 42%,#264a73,#111a2b 73%)}
+.playlist-art:before,.playlist-art:after{content:"";position:absolute;width:220px;height:220px;border:1px solid #8ce6e12a;border-radius:50%;box-shadow:0 0 0 24px #8ce6e108,0 0 0 48px #8ce6e105}
+.playlist-art:after{width:130px;height:130px;border-style:dashed;animation:rotate 28s linear infinite}
+.playlist-index{position:absolute;top:17px;left:18px;color:#b9c9e8;font:700 10px var(--font);letter-spacing:.15em}
+.playlist-symbol{position:relative;z-index:1;font:800 clamp(26px,3vw,42px) var(--display);letter-spacing:-.07em;color:#f1f5ff;text-shadow:0 0 35px #7ce5e480;text-align:center}
+.playlist-symbol span{display:block;color:var(--cyan);font-size:.45em;letter-spacing:.22em}
+.playlist-art-caption{position:absolute;bottom:18px;left:10px;right:10px;text-align:center;color:#8ea5c9;font-size:7px;letter-spacing:.12em}
+.playlist-lmstudio .playlist-art{background:radial-gradient(ellipse at 45% 42%,#3b3677,#111a2b 75%)}
+.playlist-lmstudio .playlist-art:before{border-color:#b3a4ff2a}
+.playlist-lmstudio .playlist-symbol{font-size:28px}
+.playlist-local .playlist-art{background:radial-gradient(ellipse at 45% 42%,#17616a,#111a2b 75%)}
+.playlist-manus .playlist-art{background:radial-gradient(ellipse at 45% 42%,#5b3b78,#111a2b 75%)}
+.playlist-content{display:flex;flex-direction:column;align-items:flex-start;padding:24px 22px}
+.playlist-meta{width:100%;display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:8px;letter-spacing:.09em;font-weight:700;color:#a5b7da}
+.playlist-live{color:var(--cyan);border:1px solid #78e4e02b;padding:4px 6px;border-radius:4px;white-space:nowrap}
+.playlist-content h3{font:700 19px/1.4 var(--display);letter-spacing:-.03em;margin:18px 0 10px}
+.playlist-content p{font-size:12px;line-height:1.8;color:var(--muted);margin:0 0 18px}
+.playlist-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}
+.playlist-tags span{padding:5px 7px;border:1px solid #9bb5e522;border-radius:5px;color:#b5c5e4;font-size:9px}
+.playlist-button{margin-top:auto;display:inline-flex;gap:10px;align-items:center;font-size:11px;padding:11px 14px}
+.playlist-footer{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:22px;color:var(--muted);font-size:11px}
+.playlist-footer .text-link{margin-top:0}
+@media(max-width:1000px){.playlist-grid{grid-template-columns:1fr}.playlist-art{min-height:245px}}
+@media(max-width:600px){.playlist-card{grid-template-columns:1fr}.playlist-art{min-height:190px}.playlist-art:before{width:170px;height:170px}.playlist-art:after{width:105px;height:105px}.playlist-content{padding:21px}.playlist-footer{align-items:flex-start;flex-direction:column}}
