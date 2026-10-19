@@ -5,18 +5,18 @@ A bilingual (Russian/English), responsive personal website and educational portf
 ## Website sections
 
 - **About:** engineering background, teaching, and practical AI approach.
-- **Learning:** LM Studio / local AI, Python and MCP Web Search, and Manus AI workflows.
-- **Projects:** Project Expert AI, MCP Web Search server, and Python Local RAG Course.
-- **Collaboration:** educational initiatives and international collaboration.
-- **Contact:** email, YouTube, and GitHub.
+- **Learning:** local AI and LM Studio, Python fundamentals, and Manus AI workflows.
+- **Video courses:** YouTube playlists on local LLMs, LM Studio, and Manus AI.
+- **Projects:** concise overviews of Project Expert AI, MCP Web Search, and Python Local RAG Course. Repository and individual MCP lesson links are intentionally not published on the website.
+- **Collaboration and contact:** email and YouTube channel.
 
-## Tech stack
+## Design and tech
 
+- Inspired by the Manus concept: dark navy background, blue-violet gradients, luminous UI accents, and clear content cards.
 - Plain HTML, CSS, and JavaScript; no build step or package installation.
 - Responsive layout for desktop, tablet, and mobile.
-- RU/EN language switcher.
-- Reduced-motion accessibility support.
-- External links open in a new tab with safe rel attributes.
+- RU/EN language switcher and reduced-motion accessibility support.
+- External links open in a new tab with safe `rel` attributes.
 
 ## Run locally
 
@@ -30,18 +30,7 @@ Then visit http://localhost:8000.
 
 ## Publish with GitHub Pages
 
-This is a static site and can be published without a build step. Open **Settings → Pages**, choose **Deploy from a branch**, select `main` and `/(root)`, and save. GitHub will show the public URL when the deployment is ready.
-
-**Repository visibility matters:** this repository is currently private. On GitHub Free, Pages is available for public repositories; publishing from a private repository requires a plan that supports private Pages. To use free hosting, change the repository visibility to public only after reviewing the source and confirming you are comfortable making it public. Do not publish credentials, private information, or confidential project material in this repository.
-
-
-## Content notes before public launch
-
-- The site links to the YouTube channel and the known public GitHub projects.
-- The exact Boosty course URL should replace the generic Boosty link in `index.html` when confirmed.
-- Review the English copy and project descriptions before using this site as a formal application portfolio.
-- A GitHub Pages address is a hosting URL, not a custom domain or organizational email address.
-- This portfolio describes projects as in development where appropriate; it does not imply that Project Expert AI is a released commercial product.
+This static site can be published without a build step. In **Settings → Pages**, choose **Deploy from a branch**, select `main` and `/(root)`, and save. GitHub will show the public URL when deployment is ready.
 
 ## Contact
 
